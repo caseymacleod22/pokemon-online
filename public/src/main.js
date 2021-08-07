@@ -7,5 +7,5 @@ function setup() {
 
   new.player()
 }
-// function step() {
-// }
+function step() {
+}
