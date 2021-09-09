@@ -1,4 +1,3 @@
-
 var client = {
   socket: null,
   init: function(link) {
