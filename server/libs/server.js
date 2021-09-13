@@ -16,7 +16,15 @@
 
   var port = 8000;
   var server;
-  var io;
+  var io = SocketIO(server,{
+    cors: {
+            origin: "http://localhost",
+            methods: ["GET", "POST"],
+            credentials: true,
+            transports: ['websocket', 'polling'],
+    },
+    allowEIO3: true
+    })
   var lst = [];
   var name = "";
   module.exports.init = function(p, n, c) {
